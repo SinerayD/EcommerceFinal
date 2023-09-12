@@ -1861,4 +1861,12 @@ ol {
 .blog__details__widget .blog__details__social a:last-child {
 	margin-right: 0;
 }
+/*Shop Details*/
 
+.related-product {
+	padding-bottom: 30px;
+}
+
+.related__product__title {
+	margin-bottom: 70px;
+}
