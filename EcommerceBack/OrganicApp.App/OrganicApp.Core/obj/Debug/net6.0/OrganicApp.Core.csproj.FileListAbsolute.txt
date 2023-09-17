@@ -1,0 +1,5 @@
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.Core\obj\Debug\net6.0\OrganicApp.Core.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.Core\obj\Debug\net6.0\OrganicApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.Core\obj\Debug\net6.0\OrganicApp.Core.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.Core\obj\Debug\net6.0\OrganicApp.Core.AssemblyInfo.cs
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.Core\obj\Debug\net6.0\OrganicApp.Core.csproj.CoreCompileInputs.cache

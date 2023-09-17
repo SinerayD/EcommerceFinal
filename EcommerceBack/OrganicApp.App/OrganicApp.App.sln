@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganicApp.App", "OrganicApp.App\OrganicApp.App.csproj", "{26856EC6-C749-47DA-956C-263BE03AE67E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganicApp.Core", "OrganicApp.Core\OrganicApp.Core.csproj", "{9B438703-57CC-4752-8BC5-1A698BAA2D6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26856EC6-C749-47DA-956C-263BE03AE67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26856EC6-C749-47DA-956C-263BE03AE67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26856EC6-C749-47DA-956C-263BE03AE67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26856EC6-C749-47DA-956C-263BE03AE67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B438703-57CC-4752-8BC5-1A698BAA2D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B438703-57CC-4752-8BC5-1A698BAA2D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B438703-57CC-4752-8BC5-1A698BAA2D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B438703-57CC-4752-8BC5-1A698BAA2D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81D093B5-CDDC-4EB9-AA79-62D551462DAB}
+	EndGlobalSection
+EndGlobal
