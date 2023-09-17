@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganicApp.App", "OrganicAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganicApp.Core", "OrganicApp.Core\OrganicApp.Core.csproj", "{9B438703-57CC-4752-8BC5-1A698BAA2D6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganicApp.Data", "OrganicApp.Data\OrganicApp.Data.csproj", "{B553C7D3-BF54-41E7-9993-1727C22C8865}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9B438703-57CC-4752-8BC5-1A698BAA2D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B438703-57CC-4752-8BC5-1A698BAA2D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B438703-57CC-4752-8BC5-1A698BAA2D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B553C7D3-BF54-41E7-9993-1727C22C8865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B553C7D3-BF54-41E7-9993-1727C22C8865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B553C7D3-BF54-41E7-9993-1727C22C8865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B553C7D3-BF54-41E7-9993-1727C22C8865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
