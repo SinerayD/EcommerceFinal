@@ -1,27 +1,103 @@
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using OrganicApp.Core.Entities;
+using OrganicApp.Data.Contexts;
+using OrganicApp.Data.UniteOfWork;
+using OrganicApp.Service.Extensions;
+using OrganicApp.Service.Utilities.CustomDescriber;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+//Extension
+builder.Services.AddValidation();
+builder.Services.AddServices();
+
+
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddFluentValidationAutoValidation();
+
+
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization();
+
+#region Identity
+
+builder.Services.AddIdentity<AppUser, AppRole>(opt =>
+{
+    opt.Password.RequireNonAlphanumeric = false;  //Simvollardan biri olmalidir(@,/,$) 
+    opt.Password.RequireLowercase = true;       //Mutleq Kicik herf
+    opt.Password.RequireUppercase = true;       //Mutleq Boyuk herf 
+    opt.Password.RequiredLength = 4;            //Min. simvol sayi
+    opt.Password.RequireDigit = false;
+
+    opt.User.RequireUniqueEmail = true;
+
+    opt.SignIn.RequireConfirmedEmail = true;
+    opt.SignIn.RequireConfirmedAccount = false;
+
+    opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3); //Sifreni 5 defe sehv girdikde hesab 3dk baglanir.
+    opt.Lockout.MaxFailedAccessAttempts = 5;                      //Sifreni max. 5defe sehv girmek olar.
+
+}).AddErrorDescriber<CustomErrorDescriber>().AddEntityFrameworkStores<OrganicAppDbContext>().AddDefaultTokenProviders();
+
+#endregion
+
+#region Cookie
+
+builder.Services.ConfigureApplicationCookie(opt =>
+{
+    opt.Cookie.HttpOnly = true;
+    opt.Cookie.SameSite = SameSiteMode.Strict;
+    opt.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+    opt.Cookie.Name = "AshionIdentity";
+    opt.LoginPath = new PathString("/Account/Login");
+    opt.AccessDeniedPath = new PathString("/Account/AccessDenied");
+
+});
+
+#endregion
+
+#region Context
+
+builder.Services.AddDbContext<OrganicAppDbContext>(opt =>
+{
+    opt.UseSqlServer(builder.Configuration["ConnectionStrings:Default"]);
+});
+
+#endregion
+
+builder.Services.AddScoped<IUow, Uow>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseExceptionHandler("/Error");
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseHttpsRedirection();
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "Default2",
+        pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+        );
+    endpoints.MapControllerRoute(
+        name: "Default",
+        pattern: "{controller=Home}/{action=HomePage}/{id?}"
+        );
+    endpoints.MapDefaultControllerRoute();
+});
 
 app.Run();
+
+

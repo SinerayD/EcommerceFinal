@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OganiApp.Core.Entities
+namespace OrganicApp.Core.Entities
 {
     public class Category : BaseEntity
     {
@@ -14,8 +14,6 @@ namespace OganiApp.Core.Entities
         public string? Image { get; set; }
         [NotMapped]
         public IFormFile? Photo { get; set; }
-
-        //Relation Property
         public List<Product>? Products { get; set; }
     }
 }

@@ -1,16 +1,16 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
-using OganiApp.Core.Entities;
-using OganiApp.Service.FluentValidations;
-using OganiApp.Service.Services;
-using OganiApp.Service.Services.Interface;
+using OrganicApp.Core.Entities;
+using OrganicApp.Service.FluentValidations;
+using OrganicApp.Service.Services;
+using OrganicApp.Service.Services.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OganiApp.Service.Extensions
+namespace OrganicApp.Service.Extensions
 {
     public static class ServiceExtension
     {

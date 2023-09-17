@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OganiApp.Core.Entities
+namespace OrganicApp.Core.Entities
 {
     public class Advert: BaseEntity
     {

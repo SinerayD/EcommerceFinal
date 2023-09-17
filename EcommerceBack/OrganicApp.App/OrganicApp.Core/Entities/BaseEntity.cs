@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OganiApp.Core.Entities
+namespace OrganicApp.Core.Entities
 {
     public abstract class BaseEntity
     {

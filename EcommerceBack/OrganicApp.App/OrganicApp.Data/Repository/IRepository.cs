@@ -1,4 +1,4 @@
-﻿using OganiApp.Core.Entities;
+﻿using OrganicApp.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OganiApp.Data.Repository
+namespace OrganicApp.Data.Repository
 {
     public interface IRepository <T> where T : BaseEntity
     {

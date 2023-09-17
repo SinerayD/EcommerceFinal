@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OganiApp.Service.Services.Interface;
+using OrganicApp.Service.Services.Interface;
 using System.Data;
 
-namespace OganiApp.UI.Areas.AdminPanel.Controllers
+namespace OrganicApp.UI.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
     [Authorize(Roles = ("SuperAdmin,Admin"))]

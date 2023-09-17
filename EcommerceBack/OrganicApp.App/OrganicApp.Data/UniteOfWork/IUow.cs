@@ -1,12 +1,12 @@
-﻿using OganiApp.Core.Entities;
-using OganiApp.Data.Repository;
+﻿using OrganicApp.Core.Entities;
+using OrganicApp.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OganiApp.Data.UniteOfWork
+namespace OrganicApp.Data.UniteOfWork
 {
     public interface IUow
     {

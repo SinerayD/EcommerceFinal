@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OganiApp.Core.Entities;
-using OganiApp.Data.Contexts;
+using OrganicApp.Core.Entities;
+using OrganicApp.Data.Contexts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,13 +8,13 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OganiApp.Data.Repository
+namespace OrganicApp.Data.Repository
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
-        private readonly AppDbContext _context;
+        private readonly OrganicAppDbContext _context;
         readonly DbSet<T> table;
-        public Repository(AppDbContext context)
+        public Repository(OrganicAppDbContext context)
         {
             _context = context;
             table = _context.Set<T>();

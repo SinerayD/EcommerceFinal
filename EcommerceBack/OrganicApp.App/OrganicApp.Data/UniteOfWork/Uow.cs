@@ -1,19 +1,19 @@
-﻿using OganiApp.Core.Entities;
-using OganiApp.Data.Contexts;
-using OganiApp.Data.Repository;
+﻿using OrganicApp.Core.Entities;
+using OrganicApp.Data.Contexts;
+using OrganicApp.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OganiApp.Data.UniteOfWork
+namespace OrganicApp.Data.UniteOfWork
 {
     public class Uow : IUow
     {
-        private readonly AppDbContext _context;
+        private readonly OrganicAppDbContext _context;
 
-        public Uow(AppDbContext context)
+        public Uow(OrganicAppDbContext context)
         {
             _context = context;
         }

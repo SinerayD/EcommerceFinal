@@ -1,15 +1,15 @@
 ﻿using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using OganiApp.Core.Entities;
-using OganiApp.Service.FluentValidations;
+using OrganicApp.Core.Entities;
+using OrganicApp.Service.FluentValidations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OganiApp.Service.Extensions
+namespace OrganicApp.Service.Extensions
 {
     public static class ValidationExtension
     {

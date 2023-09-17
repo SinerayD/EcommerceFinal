@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OganiApp.Core.Entities
+namespace OrganicApp.Core.Entities
 {
     public class Product : BaseEntity
     {
@@ -19,8 +19,6 @@ namespace OganiApp.Core.Entities
 
         public int CategoryId { get; set; }
         public List<Comment>? Comments { get; set; }
-
-        //Relation Property
 
         public Category? Category { get; set; }
         public ProductDetail? ProductDetails { get; set; }
