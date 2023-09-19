@@ -12,16 +12,14 @@
 
     <section id="background-potatoes">
         <div class="background-potatoes">
-            <div class="img">
-                <img src="~/MemberPanel/assets/img/potatoes-background.jpeg" style="width: 100%;height: 100%;" alt="">
+            <div style="filter: brightness(50%)" class="img">
+                <img src="~/MemberPanel/assets/img/background-breadcrumb.jpg" style="width: 100%;height: 100%;object-fit:cover;" alt="">
 
             </div>
-            <div class="name">
-                <p>Organi Shop</p>
+            <div style="left: 890px;" class="name">
+                <p> Organic Shop</p>
                 <span> <a asp-controller="Home" asp-action="HomePage"> <strong>Home</strong> </a> --> Shop </span>
             </div>
-
-
 
         </div>
     </section>
@@ -92,7 +90,7 @@
 
                         <div class="sort-by-product-count">
                             <div class="product-count">
-                                <strong>@ViewBag.Count</strong> <span>Mehsul sayi</span>
+                                <strong>@ViewBag.Count</strong> <span>Product Count</span>
                             </div>
                         </div>
 
@@ -133,7 +131,7 @@
                                     <li class="page-item @(Model.HasPrevious ? "": "disabled")">
                                         <a class="page-link"  asp-action="ShopPage" asp-controller="Product" asp-area=""
                                         asp-route-page="@(Model.CurrentPage-1)"
-                                        >Evvelki</a>
+                                        >Previous</a>
                                     </li>
                                     @for (int i = 1; i <= Model.TotalPage; i++)
                                     {
@@ -145,7 +143,7 @@
                                     }
                                     <li class="page-item @(Model.HasNext ? "": "disabled")">
                                         <a class="page-link" asp-action="ShopPage" asp-controller="Product" asp-area=""
-                                        asp-route-page="@(Model.CurrentPage+1)">Sonraki</a>
+                                        asp-route-page="@(Model.CurrentPage+1)">Next</a>
                                     </li>
                                 </ul>
                             </nav>

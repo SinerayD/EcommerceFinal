@@ -17,15 +17,14 @@
 <main>
     <section id="background-potatoes">
         <div class="background-potatoes">
-            <div class="img">
-                <img src="~/MemberPanel/assets/img/potatoes-background.jpeg" style="width: 100%;height: 100%;" alt="">
-            </div>
-            <div class="name">
-                <p>Mehsullar</p>
-                <span> <a asp-controller="home" asp-area="" asp-action="homePage"> <strong>Home</strong> </a> -->Shop </span>
-            </div>
+            <div style="filter: brightness(50%)" class="img">
+                <img src="~/MemberPanel/assets/img/background-breadcrumb.jpg" style="width: 100%;height: 100%;object-fit:cover;" alt="">
 
-
+            </div>
+            <div style="left: 890px;" class="name">
+                <p> Products</p>
+                <span> <a asp-controller="Home" asp-action="HomePage"> <strong>Home</strong> </a> --> Blog </span>
+            </div>
 
         </div>
     </section>
@@ -39,7 +38,7 @@
                     <div class="col-lg-12 col-sm-12">
 
                         <div class="sale-off">
-                            <p>Butun Mehsullar</p>
+                            <p>All Products</p>
                         </div>
 
                         <div class="sort-by-product-count">
@@ -48,13 +47,13 @@
                                 <button id="default">Default <i class="fas fa-angle-down" id="icon"></i></button>
                                 <div class="sort-content">
                                     <a href="#">Default</a>
-                                    <a asp-route-sort="@ViewBag.Name" asp-route-page="@Model.CurrentPage">Ad</a>
-                                    <a asp-route-sort="@ViewBag.Price" asp-route-page="@Model.CurrentPage">Qiymet</a>
+                                    <a asp-route-sort="@ViewBag.Name" asp-route-page="@Model.CurrentPage"> by Name</a>
+                                    <a asp-route-sort="@ViewBag.Price" asp-route-page="@Model.CurrentPage">by Pprice</a>
                                 </div>
                             </div>
 
                             <div class="product-count">
-                                <span style="color: rgba(0,0,0,1)">@ViewBag.Count</span> <span>Mehsul Sayi</span>
+                                <span style="color: rgba(0,0,0,1)">@ViewBag.Count</span> <span>Product Count</span>
                             </div>
                         </div>
 
@@ -130,3 +129,10 @@
     <script asp-append-version="true" src="~/MemberPanel/assets/js/shop.js"></script>
 
 }
+<style>
+    .col-lg-3:hover {
+        transform: scale(1.05); 
+        transition: transform 0.2s ease-in-out; 
+        cursor:pointer;
+    }
+</style>

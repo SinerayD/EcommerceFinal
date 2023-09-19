@@ -12,16 +12,16 @@ namespace OrganicApp.Service.FluentValidations
     {
         public ProductDetailValidation()
         {
-            RuleFor(x => x.ProductId).Must(x => x != 0).WithMessage("Mehsul secin! Yoxdursa yeni bir mehsul elave edin.");
+            RuleFor(x => x.ProductId).Must(x => x != 0).WithMessage("Select a product! If not available, add a new product.");
 
-            RuleFor(x => x.Description).NotEmpty().WithMessage("Mehsul'un adini yazin.").NotNull().WithMessage("Mehsul'un adini yazin.")
-                .Length(2, 400).WithMessage("Mehsul adi 2-400 simvol olmalidir.");
+            RuleFor(x => x.Description).NotEmpty().WithMessage("Write Product Name").NotNull().WithMessage("Write Product Name")
+                .Length(2, 1000).WithMessage("Product description should e between 2-1000 characters");
 
-            RuleFor(x => x.Weight).NotNull().WithMessage("Ceki daxil edin.");
+            RuleFor(x => x.Weight).NotNull().WithMessage("Enter the weight.");
 
-            RuleFor(x => x.StarCount).NotNull().WithMessage("Mehsul sayini daxil edin.");
+            RuleFor(x => x.StarCount).NotNull().WithMessage("Add Product Count.");
 
-            RuleFor(x => x.StarCount).Must(x => x != 0).WithMessage("Say daxil edin.");
+            RuleFor(x => x.StarCount).Must(x => x != 0).WithMessage("Add Number");
         }
     }
 }

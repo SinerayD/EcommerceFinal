@@ -12,16 +12,14 @@
 <main>
     <section id="background-potatoes">
         <div class="background-potatoes">
-            <div class="img">
-                <img src="~/MemberPanel/assets/img/potatoes-background.jpeg" style="width: 100%;height: 100%;" alt="">
+            <div style="filter: brightness(50%)" class="img">
+                <img src="~/MemberPanel/assets/img/background-breadcrumb.jpg" style="width: 100%;height: 100%;object-fit:cover;" alt="">
 
             </div>
-            <div class="name">
-                <p>@(Model.product.Name) Detail</p>
-                <span> <a asp-action="HomePage" asp-controller="Home"> <strong>Home</strong> </a> --> Mehsul Detail </span>
+            <div style="left: 890px;" class="name">
+                <p>@(Model.product.Name)</p>
+                <span> <a asp-controller="Home" asp-action="HomePage"> <strong>Home</strong> </a> --> Product Detail</span>
             </div>
-
-
 
         </div>
     </section>
@@ -31,7 +29,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
-                        <div class="img-product" data-id="@Model.product.Id">
+                        <div  class="img-product" data-id="@Model.product.Id">
                             <img src="~/AdminPanel/img/product/@Model.product.Image" style="width: 100%;height: 100%;" alt="">
                         </div>
                     </div>
@@ -139,22 +137,18 @@
                         <span class="active" data-id="1">Information</span>
                         @if (Model.product.ProductDetails?.Description != null)
                         {
-                            <span class="span" data-id="2">Mehsul Haqqinda</span>
+                            <span class="span" data-id="2">About Product</span>
                         }
                         <span class="span" data-id="3">Comment</span>
                     </div>
                 </div>
 
                 <div class="description" data-id="1">
-                    Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id
-                    orci porta dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor
-                    volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum
-                    congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu
-                    erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a
-                    pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit
-                    amet dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                    Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget
-                    tortor risus.
+                    Please note that while we take every care to make sure the product information displayed on our website is correct, product recipes are regularly changed. This may affect nutrition and allergen information therefore you should always check product labels and not rely solely on the information presented here.
+
+                    If you require specific advice on any Waitrose branded product, please contact our Customer Care Team. For all other products, please contact the manufacturer.
+
+                    This information is supplied for personal use only. It may not be reproduced in any way whatsoever without the prior consent of Waitrose Limited nor without due acknowledgement.
                 </div>
 
                 @if (Model.product.ProductDetails?.Description != null)
@@ -276,3 +270,58 @@
     <script asp-append-version="true" src="~/MemberPanel/assets/js/shopdetail.js"></script>
 
 }
+<style>
+    .pagination {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+        .pagination .page-item {
+            margin: 0 5px;
+        }
+
+        .pagination .page-link {
+            padding: 8px 16px;
+            border: 1px solid #7fad39;
+            background-color: #eaeaea;
+            color: #333;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+            .pagination .page-link:hover {
+                background-color: #7fad39;
+                color: #fff;
+            }
+
+        .pagination .page-item.active .page-link {
+            background-color: #7fad39;
+            border-color: #28a745;
+            color: #fff;
+        }
+
+        .pagination .page-item.disabled .page-link {
+            color: #aaa;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+        .pagination .page-link:hover {
+            background-color: #7fad39;
+            color: #fff;
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: #7fad39;
+            border-color: #7fad39;
+            color: #fff;
+        }
+
+        .pagination .page-item.disabled .page-link {
+            color: #aaa;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+</style>

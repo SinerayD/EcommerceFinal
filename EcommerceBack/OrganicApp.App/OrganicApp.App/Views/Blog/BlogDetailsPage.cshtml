@@ -12,16 +12,14 @@
 <main>
     <section id="background-potatoes">
         <div class="background-potatoes">
-            <div class="img">
-                <img src="~/MemberPanel/assets/img/potatoes-background.jpeg" style="width: 100%;height: 100%;" alt="">
+            <div style="filter: brightness(50%)" class="img">
+                <img src="~/MemberPanel/assets/img/background-breadcrumb.jpg" style="width: 100%;height: 100%;object-fit:cover;" alt="">
 
             </div>
-            <div class="name">
-                <p> BlogDetail </p>
-                <span> <a asp-action="HomePage" asp-controller="Home"> <strong>Home</strong> </a> --> BlogDetail </span>
+            <div style="left: 890px;" class="name">
+                <p> Blog Detail</p>
+                <span> <a asp-controller="Home" asp-action="HomePage"> <strong>Home</strong> </a> --> Blog Detail </span>
             </div>
-
-
 
         </div>
     </section>
@@ -34,16 +32,14 @@
                     @await Component.InvokeAsync("BlogSideBar")
 
                     <div class="col-lg-8 col-sm-12">
-                        <div class="img-st">
+                        <div style="height:auto;" class="img-st">
                             <img src="~/AdminPanel/img/blog/@Model.Image" style="width: 100%;height: 100%;" alt="">
                         </div>
-
-                        <div class="content">
-                            @(Model.BlogDetails?.Description == null? "---" : Model.BlogDetails?.Description)
-                        </div>
-
                         <div class="basic-content">
                             <p>@Model.Title</p>
+                        </div>
+                        <div class="content">
+                            @(Model.BlogDetails?.Description == null? "---" : Model.BlogDetails?.Description)
                         </div>
 
                         <div class="next-content">
