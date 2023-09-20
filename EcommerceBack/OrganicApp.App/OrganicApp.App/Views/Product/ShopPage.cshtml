@@ -17,7 +17,7 @@
 
             </div>
             <div style="left: 890px;" class="name">
-                <p> Organic Shop</p>
+                <p style="right: 690px;">Shop</p>
                 <span> <a asp-controller="Home" asp-action="HomePage"> <strong>Home</strong> </a> --> Shop </span>
             </div>
 
@@ -161,5 +161,11 @@
     <script asp-append-version="true" src="~/MemberPanel/assets/js/shop.js"></script>
      <script asp-append-version="true" src="~/MemberPanel/assets/js/blog.js"></script>
 }
-
+<style>
+    .col-lg-3:hover {
+        transform: scale(1.05);
+        transition: transform 0.2s ease-in-out;
+        cursor: pointer;
+    }
+</style>
 
