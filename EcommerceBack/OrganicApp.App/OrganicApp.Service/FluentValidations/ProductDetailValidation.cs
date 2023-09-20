@@ -15,7 +15,7 @@ namespace OrganicApp.Service.FluentValidations
             RuleFor(x => x.ProductId).Must(x => x != 0).WithMessage("Select a product! If not available, add a new product.");
 
             RuleFor(x => x.Description).NotEmpty().WithMessage("Write Product Name").NotNull().WithMessage("Write Product Name")
-                .Length(2, 1000).WithMessage("Product description should e between 2-1000 characters");
+                .Length(2, 1000).WithMessage("Product description should be between 2-1000 characters");
 
             RuleFor(x => x.Weight).NotNull().WithMessage("Enter the weight.");
 

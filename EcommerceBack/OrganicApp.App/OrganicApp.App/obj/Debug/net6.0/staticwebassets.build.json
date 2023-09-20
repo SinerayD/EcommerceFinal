@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UuJucd5L857iJSyjOC98GeQF4L3U9WB1d4VbCHVzm3k=",
+  "Hash": "wusDGHw1bH0uSuhg8ApwNbn6+AqFPTAyEkDgPs7vq3A=",
   "Source": "OrganicApp.App",
   "BasePath": "_content/OrganicApp.App",
   "Mode": "Default",
@@ -1258,23 +1258,6 @@
       "OriginalItemSpec": "wwwroot\\AdminPanel\\img\\blog\\94969f62-e845-4bc9-8e01-9b43db4f2c46_blog-1.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\blog\\9dfb196b-dade-4f8d-94ad-3f77cf95ba7d_blog-4.jpg",
-      "SourceId": "OrganicApp.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\",
-      "BasePath": "_content/OrganicApp.App",
-      "RelativePath": "AdminPanel/img/blog/9dfb196b-dade-4f8d-94ad-3f77cf95ba7d_blog-4.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\AdminPanel\\img\\blog\\9dfb196b-dade-4f8d-94ad-3f77cf95ba7d_blog-4.jpg"
-    },
-    {
       "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\blog\\a2b480c7-a1a3-49b6-9aba-da031ecac05e_blog-2.jpg",
       "SourceId": "OrganicApp.App",
       "SourceType": "Discovered",
@@ -1290,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AdminPanel\\img\\blog\\a2b480c7-a1a3-49b6-9aba-da031ecac05e_blog-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\blog\\cc424917-06f0-431c-b493-0aa7d6a72233_choc-1.jpg",
+      "SourceId": "OrganicApp.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\",
+      "BasePath": "_content/OrganicApp.App",
+      "RelativePath": "AdminPanel/img/blog/cc424917-06f0-431c-b493-0aa7d6a72233_choc-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AdminPanel\\img\\blog\\cc424917-06f0-431c-b493-0aa7d6a72233_choc-1.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\blog\\f32798fb-3c58-4a0e-83a8-49caa361db4c_blog-3.jpg",
@@ -1530,23 +1530,6 @@
       "OriginalItemSpec": "wwwroot\\AdminPanel\\img\\owner\\0bd6e1a0-102a-4f89-af58-ab524ab05df8_owner.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\owner\\45a4d73f-b986-4523-ba24-bf5babe6b610_c-9.png",
-      "SourceId": "OrganicApp.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\",
-      "BasePath": "_content/OrganicApp.App",
-      "RelativePath": "AdminPanel/img/owner/45a4d73f-b986-4523-ba24-bf5babe6b610_c-9.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\AdminPanel\\img\\owner\\45a4d73f-b986-4523-ba24-bf5babe6b610_c-9.png"
-    },
-    {
       "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\owner\\46070ab4-16ad-47db-a1ec-fcfc47ebb57f_yataq2.jfif",
       "SourceId": "OrganicApp.App",
       "SourceType": "Discovered",
@@ -1596,6 +1579,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AdminPanel\\img\\owner\\744feb20-23fc-4ac0-87fe-c7c069b3cd53_owner.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\owner\\eb54298c-6c24-4989-be11-567658e67502_user.png",
+      "SourceId": "OrganicApp.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\",
+      "BasePath": "_content/OrganicApp.App",
+      "RelativePath": "AdminPanel/img/owner/eb54298c-6c24-4989-be11-567658e67502_user.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AdminPanel\\img\\owner\\eb54298c-6c24-4989-be11-567658e67502_user.png"
     },
     {
       "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\product\\00921457-f7fe-4198-b11e-e51d113b1255_veg-5.png",
@@ -3332,6 +3332,23 @@
       "OriginalItemSpec": "wwwroot\\AdminPanel\\scss\\style.scss"
     },
     {
+      "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\MemberPanel\\assets\\css\\checkout.css",
+      "SourceId": "OrganicApp.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\",
+      "BasePath": "_content/OrganicApp.App",
+      "RelativePath": "MemberPanel/assets/css/checkout.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\MemberPanel\\assets\\css\\checkout.css"
+    },
+    {
       "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\MemberPanel\\assets\\css\\home.css",
       "SourceId": "OrganicApp.App",
       "SourceType": "Discovered",
@@ -4877,6 +4894,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\MemberPanel\\assets\\js\\blogdetail.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\MemberPanel\\assets\\js\\checkout.js",
+      "SourceId": "OrganicApp.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\",
+      "BasePath": "_content/OrganicApp.App",
+      "RelativePath": "MemberPanel/assets/js/checkout.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\MemberPanel\\assets\\js\\checkout.js"
     },
     {
       "Identity": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\MemberPanel\\assets\\js\\common.js",

@@ -5,6 +5,8 @@ using OrganicApp.Core.Entities;
 using OrganicApp.Data.Contexts;
 using OrganicApp.Data.UniteOfWork;
 using OrganicApp.Service.Extensions;
+using OrganicApp.Service.Services.Interface;
+using OrganicApp.Service.Services;
 using OrganicApp.Service.Utilities.CustomDescriber;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,15 +23,17 @@ builder.Services.AddFluentValidationAutoValidation();
 
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
+builder.Services.AddScoped<ISettingService, SettingService>();
+builder.Services.AddScoped<ISocialService, SocialService>();
 
 #region Identity
 
 builder.Services.AddIdentity<AppUser, AppRole>(opt =>
 {
-    opt.Password.RequireNonAlphanumeric = false;  //Simvollardan biri olmalidir(@,/,$) 
-    opt.Password.RequireLowercase = true;       //Mutleq Kicik herf
-    opt.Password.RequireUppercase = true;       //Mutleq Boyuk herf 
-    opt.Password.RequiredLength = 4;            //Min. simvol sayi
+    opt.Password.RequireNonAlphanumeric = false;  
+    opt.Password.RequireLowercase = true;       
+    opt.Password.RequireUppercase = true;       
+    opt.Password.RequiredLength = 4;            
     opt.Password.RequireDigit = false;
 
     opt.User.RequireUniqueEmail = true;
@@ -37,8 +41,8 @@ builder.Services.AddIdentity<AppUser, AppRole>(opt =>
     opt.SignIn.RequireConfirmedEmail = true;
     opt.SignIn.RequireConfirmedAccount = false;
 
-    opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3); //Sifreni 5 defe sehv girdikde hesab 3dk baglanir.
-    opt.Lockout.MaxFailedAccessAttempts = 5;                      //Sifreni max. 5defe sehv girmek olar.
+    opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(1); 
+    opt.Lockout.MaxFailedAccessAttempts = 3;                      
 
 }).AddErrorDescriber<CustomErrorDescriber>().AddEntityFrameworkStores<OrganicAppDbContext>().AddDefaultTokenProviders();
 

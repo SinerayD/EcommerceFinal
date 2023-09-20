@@ -1,0 +1,90 @@
+﻿@model (Setting Settingdto, List<Setting> Settinglist)
+
+@{ int count = 1; }
+
+<div class="row">
+    <div class="col-md-5 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Setting Yenilemek</h4>
+                <form asp-action="Update" asp-controller="Setting" asp-area="AdminPanel" class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="form-group row">
+                        <input type="hidden" asp-for="@Model.Settingdto.Id"/>
+                        <label asp-for="@Model.Settingdto.Phone" class="col-sm-3 col-form-label">Phone Number</label>
+                        <div class="col-sm-9">
+                            <input asp-for="@Model.Settingdto.Phone" class="form-control" id="exampleInputEmail2" placeholder="Write phone number...">
+                            <span asp-validation-for="@Model.Settingdto.Phone" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        
+                        <label asp-for="@Model.Settingdto.Email" class="col-sm-3 col-form-label">Profession</label>
+                        <div class="col-sm-9">
+                            <input asp-for="@Model.Settingdto.Email" class="form-control" id="exampleInputEmail2" placeholder="Profession yazin...">
+                            <span asp-validation-for="@Model.Settingdto.Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+
+                        <label asp-for="@Model.Settingdto.Address" class="col-sm-3 col-form-label">Profession</label>
+                        <div class="col-sm-9">
+                            <input asp-for="@Model.Settingdto.Address" class="form-control" id="exampleInputEmail2" placeholder="Profession yazin...">
+                            <span asp-validation-for="@Model.Settingdto.Address" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Foto :</label>
+                                <div class="col-sm-9">
+                            <input asp-for="@Model.Settingdto.file" class="form-control">
+                            <span asp-validation-for="@Model.Settingdto.file" class="text-danger"></span>
+                                </div>
+                    </div>
+                    <button type="submit" class="btn btn-success mr-2">Submit</button>
+                    <a asp-action="List" asp-controller="Setting" asp-area="AdminPanel" class="btn btn-light">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Owner</h4>
+                <div class="mt-auto">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Image</th>
+                                    <th>Phone</th>
+                                    <th>Adress</th>
+                                    <th>Email</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var Settingdto in Model.Settinglist)
+                                {
+                    <tr>
+                        <td>@count</td>
+                        <td class="py-1">
+                                            <img src="~/AdminPanel/img/owner/@Settingdto.file" class="mr-2" alt="image">
+                        </td>
+                                        <td>@Settingdto.Phone</td>
+                                        <td>@Settingdto.Email</td>
+                                        <td>@Settingdto.Address</td>
+                                        <td>@Settingdto.CreatedDate.ToString("MMM dd")</td>
+                        <td>
+                                            <a asp-action="Update" asp-controller="Setting" asp-area="AdminPanel" asp-route-id="@Settingdto.Id"><i class="bi bi-pencil-square"></i></a>
+                                            <a asp-action="Delete" asp-controller="Setting" asp-area="AdminPanel" asp-route-id="@Settingdto.Id"><i class="bi bi-x-square"></i></a>
+                        </td>
+                    </tr>count++;
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

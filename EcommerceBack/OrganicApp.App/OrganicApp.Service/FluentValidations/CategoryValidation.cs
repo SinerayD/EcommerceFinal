@@ -12,10 +12,10 @@ namespace OrganicApp.Service.FluentValidations
     {
         public CategoryValidation()
         {
-            RuleFor(x => x.Name).NotEmpty().WithMessage("Kateqoriya'un adini yazin.").NotNull().WithMessage("Kateqoriya'un adini yazin.")
-                .Length(2, 100).WithMessage("Kateqoriya adi 2-100 simvol olmalidir.");
+            RuleFor(x => x.Name).NotEmpty().WithMessage("Write category name.").NotNull().WithMessage("Write category name.")
+                .Length(2, 100).WithMessage("The category name must be 2-100 characters.");
 
-            RuleFor(x => x.Photo).NotNull().WithMessage("Kateqoriya ucun sekil secin...").NotEmpty().WithMessage("Kateqoriya ucun sekil secin...");
+            RuleFor(x => x.Photo).NotNull().WithMessage("Choose image for category...").NotEmpty().WithMessage("Choose image for category...");
 
            
         }

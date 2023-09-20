@@ -297,12 +297,12 @@
       "PackagePath": "staticwebassets\\AdminPanel\\img\\blog\\94969f62-e845-4bc9-8e01-9b43db4f2c46_blog-1.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\blog\\9dfb196b-dade-4f8d-94ad-3f77cf95ba7d_blog-4.jpg",
-      "PackagePath": "staticwebassets\\AdminPanel\\img\\blog\\9dfb196b-dade-4f8d-94ad-3f77cf95ba7d_blog-4.jpg"
-    },
-    {
       "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\blog\\a2b480c7-a1a3-49b6-9aba-da031ecac05e_blog-2.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\img\\blog\\a2b480c7-a1a3-49b6-9aba-da031ecac05e_blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\blog\\cc424917-06f0-431c-b493-0aa7d6a72233_choc-1.jpg",
+      "PackagePath": "staticwebassets\\AdminPanel\\img\\blog\\cc424917-06f0-431c-b493-0aa7d6a72233_choc-1.jpg"
     },
     {
       "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\blog\\f32798fb-3c58-4a0e-83a8-49caa361db4c_blog-3.jpg",
@@ -361,10 +361,6 @@
       "PackagePath": "staticwebassets\\AdminPanel\\img\\owner\\0bd6e1a0-102a-4f89-af58-ab524ab05df8_owner.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\owner\\45a4d73f-b986-4523-ba24-bf5babe6b610_c-9.png",
-      "PackagePath": "staticwebassets\\AdminPanel\\img\\owner\\45a4d73f-b986-4523-ba24-bf5babe6b610_c-9.png"
-    },
-    {
       "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\owner\\46070ab4-16ad-47db-a1ec-fcfc47ebb57f_yataq2.jfif",
       "PackagePath": "staticwebassets\\AdminPanel\\img\\owner\\46070ab4-16ad-47db-a1ec-fcfc47ebb57f_yataq2.jfif"
     },
@@ -375,6 +371,10 @@
     {
       "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\owner\\744feb20-23fc-4ac0-87fe-c7c069b3cd53_owner.jpg",
       "PackagePath": "staticwebassets\\AdminPanel\\img\\owner\\744feb20-23fc-4ac0-87fe-c7c069b3cd53_owner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\owner\\eb54298c-6c24-4989-be11-567658e67502_user.png",
+      "PackagePath": "staticwebassets\\AdminPanel\\img\\owner\\eb54298c-6c24-4989-be11-567658e67502_user.png"
     },
     {
       "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\AdminPanel\\img\\product\\00921457-f7fe-4198-b11e-e51d113b1255_veg-5.png",
@@ -1221,6 +1221,10 @@
       "PackagePath": "staticwebassets\\MemberPanel\\assets2\\sass\\style.scss"
     },
     {
+      "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\MemberPanel\\assets\\css\\checkout.css",
+      "PackagePath": "staticwebassets\\MemberPanel\\assets\\css\\checkout.css"
+    },
+    {
       "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\MemberPanel\\assets\\css\\home.css",
       "PackagePath": "staticwebassets\\MemberPanel\\assets\\css\\home.css"
     },
@@ -1583,6 +1587,10 @@
     {
       "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\MemberPanel\\assets\\js\\blogdetail.js",
       "PackagePath": "staticwebassets\\MemberPanel\\assets\\js\\blogdetail.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\MemberPanel\\assets\\js\\checkout.js",
+      "PackagePath": "staticwebassets\\MemberPanel\\assets\\js\\checkout.js"
     },
     {
       "Id": "C:\\Users\\User\\OneDrive\\Рабочий стол\\EcommerceFinal\\EcommerceBack\\OrganicApp.App\\OrganicApp.App\\wwwroot\\MemberPanel\\assets\\js\\common.js",

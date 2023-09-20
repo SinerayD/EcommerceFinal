@@ -32,26 +32,26 @@
     text-align: center;
     height: 30px;
     padding-top: 3px;
-    color: black; /* Set the initial text color */
-    transition: background-color 0.2s ease-in-out; /* Add transition for smooth effect */
+    color: black;
+    transition: background-color 0.2s ease-in-out; 
 }
 
 .owl-carousel-slider .item:hover .cate-name {
-    background-color: green; /* Change background color of category name on hover */
+    background-color: green;
 }
 
     .owl-carousel-slider .item:hover .cate-name a {
-        color: white; /* Change text color of category name's links on hover */
+        color: white; 
     }
 
 .owl-carousel-slider .item {
     position: relative;
-    border: 2px solid transparent; /* Set an initial border with no color */
-    transition: border-color 0.2s ease-in-out; /* Add transition for smooth effect */
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out; 
 }
 
     .owl-carousel-slider .item:hover {
-        border-color: green; /* Change the border color on hover */
+        border-color: green; 
         cursor: pointer;
     }
 

@@ -12,7 +12,7 @@ namespace OrganicApp.Service.FluentValidations
     {
         public AdvertValidation()
         {
-            RuleFor(x => x.Photo).NotNull().WithMessage("Sekil secin...").NotEmpty().WithMessage("Sekil secin...");
+            RuleFor(x => x.Photo).NotNull().WithMessage("Choose Image...").NotEmpty().WithMessage("Choose Image...");
         }
     }
 }

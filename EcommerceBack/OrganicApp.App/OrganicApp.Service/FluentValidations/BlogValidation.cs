@@ -12,10 +12,10 @@ namespace OrganicApp.Service.FluentValidations
     {
         public BlogValidation()
         {
-            RuleFor(x => x.Title).NotEmpty().WithMessage("Mehsul'un adini yazin.").NotNull().WithMessage("Mehsul'un adini yazin.")
-                .Length(2, 100).WithMessage("Mehsul adi 2-500 simvol olmalidir.");
+            RuleFor(x => x.Title).NotEmpty().WithMessage("Write product name.").NotNull().WithMessage("Write product name.")
+                .Length(2, 100).WithMessage("The product name must be 2-500 characters.");
 
-            RuleFor(x => x.Photo).NotNull().WithMessage("Mehsul ucun sekil secin...").NotEmpty().WithMessage("Mehsul ucun sekil secin...");
+            RuleFor(x => x.Photo).NotNull().WithMessage("Choose image for product...").NotEmpty().WithMessage("Choose image for product...");
         }
     }
 }

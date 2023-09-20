@@ -13,14 +13,14 @@ namespace OrganicApp.Service.FluentValidations
     {
         public ContactValidation()
         {
-            RuleFor(x => x.Email).NotEmpty().WithMessage("Email yazin.").NotNull().WithMessage("Email yazin.")
-                .Length(2, 150).WithMessage("2-150 simvol olmalidir.");
+            RuleFor(x => x.Email).NotEmpty().WithMessage("Write Email.").NotNull().WithMessage("Write Email.")
+                .Length(2, 150).WithMessage("It must be 2-150 characters.");
 
-            RuleFor(x => x.Name).NotEmpty().WithMessage("Adini yazin.").NotNull().WithMessage("Adini yazin.")
-                .Length(2, 150).WithMessage("2-150 simvol olmalidir.");
+            RuleFor(x => x.Name).NotEmpty().WithMessage("Adini yazin.").NotNull().WithMessage("Write Name.")
+                .Length(2, 150).WithMessage("It must be 2-150 characters.");
 
-            RuleFor(x => x.Message).NotEmpty().WithMessage("Message yazin.").NotNull().WithMessage("Adini yazin.")
-                .Length(2, 300).WithMessage("2-300 simvol olmalidir.");
+            RuleFor(x => x.Message).NotEmpty().WithMessage("Message yazin.").NotNull().WithMessage("Write Name.")
+                .Length(2, 300).WithMessage("It must be 2-100 characters.");
         }
     }
 }

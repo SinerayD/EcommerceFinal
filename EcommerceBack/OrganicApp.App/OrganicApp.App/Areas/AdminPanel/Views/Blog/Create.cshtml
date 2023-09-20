@@ -10,21 +10,21 @@
     <div class="col-12 grid-margin">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Yeni Blog Elave Etmek</h4>
+                <h4 class="card-title">Create Blog</h4>
                 <form asp-action="Create" asp-controller="Blog" asp-area="AdminPanel" class="form-sample" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Basliq Adi :</label>
+                                <label class="col-sm-3 col-form-label">Blog Title</label>
                                 <div class="col-sm-9">
-                                    <input asp-for="@Model.dto.Title" type="text" class="form-control" placeholder="Basliq adini yazin..." />
+                                    <input asp-for="@Model.dto.Title" type="text" class="form-control" placeholder="Type title name..." />
                                     <span asp-validation-for="@Model.dto.Title" class="text-danger"></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Owner :</label>
+                                <label class="col-sm-3 col-form-label">Author :</label>
                                 <div class="col-sm-9">
                                     <select asp-for="@Model.dto.OwnerId" class="form-control" asp-items="@(new SelectList(Model.owners,"Id","Fullname"))" >
                                     </select>
@@ -35,7 +35,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group row">
-                                <label class="col-sm-3 col-form-label">Foto :</label>
+                                <label class="col-sm-3 col-form-label">Photo :</label>
                                 <div class="col-sm-9">
                                     <input asp-for="@Model.dto.Photo" class="form-control" >
                                     <span asp-validation-for="@Model.dto.Photo" class="text-danger"></span>
@@ -67,10 +67,10 @@
                                     Foto
                                 </td>
                                 <th>
-                                    Basliq
+                                   Title
                                 </th>
                                 <th>
-                                    Owner
+                                   Author
                                 </th>
                                 <th>
                                     EDIT
@@ -117,10 +117,10 @@
     <div class="col-md-5 grid-margin stretch-card">
         <div class="card">
             <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Blog Detali Elave Etmek</h4>
+                <h4 class="card-title">Add Blog Detail</h4>
                 <form asp-action="Create" asp-controller="BlogDetail" asp-area="AdminPanel" class="forms-sample" method="post">
                     <div class="form-group row">
-                        <label asp-for="detail.BlogId" class="col-sm-3 col-form-label">Mehsul :</label>
+                        <label asp-for="detail.BlogId" class="col-sm-3 col-form-label">Product :</label>
                         <div class="col-sm-9">
                             <select asp-for="detail.BlogId" asp-items="@(new SelectList(Model.blogdetalist,"Id","Title"))" class="form-control">
                             </select>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label asp-for="detail.CategoryName" class="col-sm-3 col-form-label">CategoryName :</label>
+                        <label asp-for="detail.CategoryName" class="col-sm-3 col-form-label">Category Name :</label>
                         <div class="col-sm-9">
                             <input asp-for="detail.CategoryName" type="text" class="form-control" id="exampleInputEmail2">
                             <span class="text-danger" asp-validation-for="detail.CategoryName"></span>
@@ -142,7 +142,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label asp-for="detail.Description" class="col-sm-3 col-form-label">Haqqinda :</label>
+                        <label asp-for="detail.Description" class="col-sm-3 col-form-label">About :</label>
                         <div class="col-sm-9">
                             <textarea asp-for="detail.Description" type="text" class="form-control" id="exampleInputEmail2">
                             </textarea>
@@ -165,8 +165,8 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Basliq</th>
-                                    <th>Kateq. Adi</th>
+                                    <th>Title</th>
+                                    <th>Category Name</th>
                                     <th>Tags</th>
                                     <th>EDIT</th>
                                 </tr>

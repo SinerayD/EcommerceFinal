@@ -9,7 +9,7 @@ namespace OrganicApp.Service.Models.Account
 {
     public class ForgotPasswordDto
     {
-        [EmailAddress(ErrorMessage = "*E-mail formatinda('@') yazi daxil edin.")]
+        [EmailAddress(ErrorMessage = "Enter text in email format (with '@').")]
         public string? Email { get; set; }
     }
 }

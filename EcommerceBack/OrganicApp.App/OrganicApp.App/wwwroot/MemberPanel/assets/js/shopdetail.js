@@ -127,7 +127,7 @@ products.forEach(product => {
 
             });
 
-            swal("Good job!", "Product added succes!", "success");
+            swal("Good job!", "Product added succesfully!", "success");
 
 
 
@@ -192,7 +192,7 @@ hearticon.forEach(hearticons => {
 
             });
 
-            swal("Good job!", "Product added succes!", "success");
+            swal("Good job!", "Product added successfully!", "success");
 
         }
 
@@ -213,6 +213,55 @@ hearticon.forEach(hearticons => {
 
     })
 });
+let products = document.querySelectorAll("#addproduct");
+let count = document.querySelector(".basket-count");
+let totalPriceElement = document.getElementById("total-price");
+
+// Define a variable to keep track of the total price
+let totalPrice = 0;
+
+// ...
+
+products.forEach(product => {
+    product.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        let productimage = this.parentNode.parentNode.previousElementSibling.getAttribute("src");
+        let productname = this.parentNode.parentNode.nextElementSibling.childNodes[1].innerText;
+        let productprice = parseFloat(this.parentNode.parentNode.parentNode.lastElementChild.innerText.substring(1)); // Extract numerical value from price
+        let productid = this.parentNode.parentNode.parentNode.parentNode.getAttribute("data-id");
+        let productcount = this.parentNode.parentNode.parentNode.lastElementChild.innerText;
+
+        let existproduct = productList.find(m => m.id == productid);
+
+        if (existproduct == undefined) {
+            productList.push({
+                id: productid,
+                image: productimage,
+                name: productname,
+                price: productprice,
+                count: 1
+            });
+
+            // Update total price
+            totalPrice += productprice;
+            totalPriceElement.innerText = `$${totalPrice.toFixed(2)}`;
+
+            swal("Good job!", "Product added successfully!", "success");
+
+        } else {
+            swal("Info!", "You have added this Product to your Cart,Please check your basket!", "info");
+        }
+
+        localStorage.setItem("products", JSON.stringify(productList));
+        count.innerText = getCount(productList);
+    });
+});
+
+function getCount(list) {
+    return list.length;
+}
+count.innerText = getCount(productList);
 
 function getCountheart(heart) {
     return heart.length;

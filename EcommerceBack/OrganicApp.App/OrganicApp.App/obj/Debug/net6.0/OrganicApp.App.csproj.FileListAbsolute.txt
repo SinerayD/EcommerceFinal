@@ -1,3 +1,11 @@
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.AssemblyInfo.cs
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.RazorAssemblyInfo.cache
+C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.RazorAssemblyInfo.cs
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\bin\Debug\net6.0\appsettings.json
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\bin\Debug\net6.0\OrganicApp.App.staticwebassets.runtime.json
@@ -245,13 +253,6 @@ C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\Orga
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\bin\Debug\net6.0\OrganicApp.Data.pdb
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\bin\Debug\net6.0\OrganicApp.Service.pdb
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\bin\Debug\net6.0\OrganicApp.Core.pdb
-C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.csproj.AssemblyReference.cache
-C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.AssemblyInfoInputs.cache
-C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.AssemblyInfo.cs
-C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.csproj.CoreCompileInputs.cache
-C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\staticwebassets\msbuild.OrganicApp.App.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\staticwebassets\msbuild.build.OrganicApp.App.props
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.OrganicApp.App.props
@@ -266,5 +267,3 @@ C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\Orga
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.pdb
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.genruntimeconfig.cache
 C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\ref\OrganicApp.App.dll
-C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.RazorAssemblyInfo.cache
-C:\Users\User\OneDrive\Рабочий стол\EcommerceFinal\EcommerceBack\OrganicApp.App\OrganicApp.App\obj\Debug\net6.0\OrganicApp.App.RazorAssemblyInfo.cs

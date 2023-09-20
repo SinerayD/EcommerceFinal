@@ -12,13 +12,13 @@ namespace OrganicApp.Service.FluentValidations
     {
         public OwnerValidation()
         {
-            RuleFor(x => x.Fullname).NotEmpty().WithMessage("Adini yazin.").NotNull().WithMessage("Adini yazin.")
-                .Length(2, 100).WithMessage("2-100 simvol olmalidir.");
+            RuleFor(x => x.Fullname).NotEmpty().WithMessage("Write Name.").NotNull().WithMessage("Write Name.")
+                .Length(2, 100).WithMessage("It must be 2-100 characters.");
 
-            RuleFor(x => x.Profession).NotEmpty().WithMessage("Pese adini yazin.").NotNull().WithMessage("Pese adini yazin.")
-                .Length(2, 100).WithMessage("2-100 simvol olmalidir.");
+            RuleFor(x => x.Profession).NotEmpty().WithMessage("Write Profession.").NotNull().WithMessage("Write Profession.")
+                .Length(2, 100).WithMessage("It must be 2-100 characters.");
 
-            RuleFor(x => x.Photo).NotNull().WithMessage("Sekil secin...").NotEmpty().WithMessage("Sekil secin...");
+            RuleFor(x => x.Photo).NotNull().WithMessage("Choose Picture...").NotEmpty().WithMessage("Choose Picture...");
         }
     }
 }

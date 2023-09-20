@@ -8,7 +8,7 @@
     <div class="col-md-5 grid-margin stretch-card">
         <div class="card">
             <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Blog Detali Yenilemek</h4>
+                <h4 class="card-title">Update Blog Detail</h4>
                 <form asp-action="Update" asp-controller="BlogDetail" asp-area="AdminPanel" class="forms-sample" method="post">
                     <div class="form-group row">
                         <input type="hidden" asp-for="dto.Id"/>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label asp-for="dto.CategoryName" class="col-sm-3 col-form-label">Katq. Adi :</label>
+                        <label asp-for="dto.CategoryName" class="col-sm-3 col-form-label">Category Name:</label>
                         <div class="col-sm-9">
                             <input asp-for="dto.CategoryName" type="text"  class="form-control" id="exampleInputEmail2">
                             <span class="text-danger" asp-validation-for="dto.CategoryName"></span>
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label asp-for="dto.Description" class="col-sm-3 col-form-label">Haqqinda :</label>
+                        <label asp-for="dto.Description" class="col-sm-3 col-form-label">About :</label>
                         <div class="col-sm-9">
                             <textarea asp-for="dto.Description" type="text" class="form-control" id="exampleInputEmail2">
                             </textarea>
@@ -65,7 +65,7 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Blog</th>
-                                    <th>Katq.Adi</th>
+                                    <th>Category Name</th>
                                     <th>Tags</th>
                                     <th>EDIT</th>
                                 </tr>

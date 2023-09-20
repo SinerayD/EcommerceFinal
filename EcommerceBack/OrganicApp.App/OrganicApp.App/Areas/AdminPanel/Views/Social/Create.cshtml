@@ -1,0 +1,63 @@
+﻿@model (Social Socialdto, List<Social> Sociallist)
+
+@{ int count = 1; }
+
+
+<div class="row">
+    <div class="col-md-5 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body d-flex flex-column">
+                <h4 class="card-title">Add new Social</h4>
+                <form asp-action="Create" asp-controller="Social" asp-area="AdminPanel" class="forms-sample" method="post" enctype="multipart/form-data">
+                    <div class="form-group row">
+                        <label asp-for="@Model.Socialdto.Link" class="col-sm-3 col-form-label">Social Link</label>
+                        <div class="col-sm-9">
+                            <input asp-for="@Model.Socialdto.Link" class="form-control" id="exampleInputEmail2" placeholder="Paste Link...">
+                            <span asp-validation-for="@Model.Socialdto.Link" class="text-danger"></span>
+                        </div>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-success mr-2">Submit</button>
+                    <a asp-action="List" asp-controller="Social" asp-area="AdminPanel" class="btn btn-light">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Social</h4>
+                <div class="mt-auto">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Link</th>
+                                    
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var SocialDto in Model.Sociallist)
+                                {
+                    <tr>
+                        <td>@count</td>
+
+                                        <td>@SocialDto.Link </td>
+
+                                        <td>@SocialDto.CreatedDate.ToString("MMM dd")</td>
+                        <td>
+                                            <a asp-action="Update" asp-controller="Social" asp-area="AdminPanel" asp-route-id="@SocialDto.Id"><i class="bi bi-pencil-square"></i></a>
+                                            <a asp-action="Delete" asp-controller="Social" asp-area="AdminPanel" asp-route-id="@SocialDto.Id"><i class="bi bi-x-square"></i></a>
+                        </td>
+                    </tr>count++;
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

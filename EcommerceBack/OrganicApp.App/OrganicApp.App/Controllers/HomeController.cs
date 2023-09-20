@@ -34,12 +34,11 @@ namespace OrganicApp.UI.Controllers
         public async Task<IActionResult> HomePage()
         {
             //Lasted
-            ViewBag.Category1 = "fruit";
-            ViewBag.Category2 = "vegetable";
-            ViewBag.Category3 = "fresh meat";
+            ViewBag.Category1 = "fresh fruit";
+            ViewBag.Category2 = "vegetables";
 
             //Result
-            ViewBag.Category4 = "dried more";
+            ViewBag.Category4 = "coffee";
             ViewBag.Category5 = "fast food";
             ViewBag.Category6 = "drink";
 

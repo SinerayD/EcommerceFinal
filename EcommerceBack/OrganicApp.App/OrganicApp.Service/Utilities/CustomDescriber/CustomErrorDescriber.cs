@@ -14,7 +14,7 @@ namespace OrganicApp.Service.Utilities.CustomDescriber
             return new IdentityError()
             {
                 Code = "PasswordRequiresLower",
-                Description = "*Şifre'de kicik herf olmalidir."
+                Description = "The password must contain a lowercase letter."
             };
         }
 
@@ -23,7 +23,7 @@ namespace OrganicApp.Service.Utilities.CustomDescriber
             return new IdentityError()
             {
                 Code = "PasswordRequiresUpper",
-                Description = "*Şifre'de boyuk herf olmalidir."
+                Description = "The password must contain a uppercase letter."
             };
         }
 
@@ -32,7 +32,7 @@ namespace OrganicApp.Service.Utilities.CustomDescriber
             return new IdentityError()
             {
                 Code = "DuplicateUserName",
-                Description = $"*'{userName}' adli istifadeci artiq movcuddur.(Yeniden istifade edile bilmez.!)"
+                Description = $"*'{userName}' The username is already taken.(Cannot be reused.!)"
             };
         }
 
@@ -41,7 +41,7 @@ namespace OrganicApp.Service.Utilities.CustomDescriber
             return new IdentityError()
             {
                 Code = "PasswordTooShort",
-                Description = $"*Şifre min. {length} simvol ola biler."
+                Description = $"*Password must be min. {length} characters."
             };
         }
 
@@ -50,7 +50,7 @@ namespace OrganicApp.Service.Utilities.CustomDescriber
             return new IdentityError()
             {
                 Code = "DuplicateEmail",
-                Description = $"*'{email}' bu e-mail artiq movcuddur.(Yeniden istifade edile bilmez.!)"
+                Description = $"*'{email}' This email is already in use.(Cannot be reused.!)"
             };
         }
     }

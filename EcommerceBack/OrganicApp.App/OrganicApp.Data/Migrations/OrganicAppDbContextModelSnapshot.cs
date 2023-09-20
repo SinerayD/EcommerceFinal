@@ -125,7 +125,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Advert", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Advert", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -150,7 +150,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("Adverts");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.AppRole", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.AppRole", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -183,7 +183,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("AspNetRoles", (string)null);
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.AppUser", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.AppUser", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -254,7 +254,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Basket", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Basket", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -293,7 +293,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("Baskets");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Blog", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Blog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -326,7 +326,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("Blogs");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.BlogDetail", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.BlogDetail", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -363,7 +363,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("BlogDetails");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Category", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -391,7 +391,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Comment", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Comment", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -424,7 +424,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("Comments");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Contact", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Contact", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -464,7 +464,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("Contacts");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Favorite", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Favorite", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -500,7 +500,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("Favorites");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Owner", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Owner", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -531,7 +531,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("Owners");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Product", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -570,7 +570,7 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.ProductDetail", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.ProductDetail", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -610,9 +610,78 @@ namespace OrganicApp.Data.Migrations
                     b.ToTable("ProductDetails");
                 });
 
+            modelBuilder.Entity("OrganicApp.Core.Entities.Setting", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Logo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Settings");
+                });
+
+            modelBuilder.Entity("OrganicApp.Core.Entities.Social", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("SettingId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SettingId");
+
+                    b.ToTable("Socials");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.AppRole", null)
+                    b.HasOne("OrganicApp.Core.Entities.AppRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -621,7 +690,7 @@ namespace OrganicApp.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<int>", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.AppUser", null)
+                    b.HasOne("OrganicApp.Core.Entities.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -630,7 +699,7 @@ namespace OrganicApp.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.AppUser", null)
+                    b.HasOne("OrganicApp.Core.Entities.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -639,13 +708,13 @@ namespace OrganicApp.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<int>", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.AppRole", null)
+                    b.HasOne("OrganicApp.Core.Entities.AppRole", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OganiApp.Core.Entities.AppUser", null)
+                    b.HasOne("OrganicApp.Core.Entities.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -654,16 +723,16 @@ namespace OrganicApp.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.AppUser", null)
+                    b.HasOne("OrganicApp.Core.Entities.AppUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Basket", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Basket", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.AppUser", "AppUser")
+                    b.HasOne("OrganicApp.Core.Entities.AppUser", "AppUser")
                         .WithMany("Baskets")
                         .HasForeignKey("AppUserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -672,9 +741,9 @@ namespace OrganicApp.Data.Migrations
                     b.Navigation("AppUser");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Blog", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Blog", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.Owner", "Owner")
+                    b.HasOne("OrganicApp.Core.Entities.Owner", "Owner")
                         .WithMany("Blogs")
                         .HasForeignKey("OwnerId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -683,20 +752,20 @@ namespace OrganicApp.Data.Migrations
                     b.Navigation("Owner");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.BlogDetail", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.BlogDetail", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.Blog", "Blog")
+                    b.HasOne("OrganicApp.Core.Entities.Blog", "Blog")
                         .WithOne("BlogDetails")
-                        .HasForeignKey("OganiApp.Core.Entities.BlogDetail", "BlogId")
+                        .HasForeignKey("OrganicApp.Core.Entities.BlogDetail", "BlogId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Blog");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Comment", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Comment", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.Product", "Product")
+                    b.HasOne("OrganicApp.Core.Entities.Product", "Product")
                         .WithMany("Comments")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -705,9 +774,9 @@ namespace OrganicApp.Data.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Favorite", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Favorite", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.AppUser", "AppUser")
+                    b.HasOne("OrganicApp.Core.Entities.AppUser", "AppUser")
                         .WithMany("Favorites")
                         .HasForeignKey("AppUserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -716,9 +785,9 @@ namespace OrganicApp.Data.Migrations
                     b.Navigation("AppUser");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Product", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Product", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.Category", "Category")
+                    b.HasOne("OrganicApp.Core.Entities.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -727,44 +796,58 @@ namespace OrganicApp.Data.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.ProductDetail", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.ProductDetail", b =>
                 {
-                    b.HasOne("OganiApp.Core.Entities.Product", "Product")
+                    b.HasOne("OrganicApp.Core.Entities.Product", "Product")
                         .WithOne("ProductDetails")
-                        .HasForeignKey("OganiApp.Core.Entities.ProductDetail", "ProductId")
+                        .HasForeignKey("OrganicApp.Core.Entities.ProductDetail", "ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.AppUser", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Social", b =>
+                {
+                    b.HasOne("OrganicApp.Core.Entities.Setting", "Settings")
+                        .WithMany("Socials")
+                        .HasForeignKey("SettingId");
+
+                    b.Navigation("Settings");
+                });
+
+            modelBuilder.Entity("OrganicApp.Core.Entities.AppUser", b =>
                 {
                     b.Navigation("Baskets");
 
                     b.Navigation("Favorites");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Blog", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Blog", b =>
                 {
                     b.Navigation("BlogDetails");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Category", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Category", b =>
                 {
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Owner", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Owner", b =>
                 {
                     b.Navigation("Blogs");
                 });
 
-            modelBuilder.Entity("OganiApp.Core.Entities.Product", b =>
+            modelBuilder.Entity("OrganicApp.Core.Entities.Product", b =>
                 {
                     b.Navigation("Comments");
 
                     b.Navigation("ProductDetails");
+                });
+
+            modelBuilder.Entity("OrganicApp.Core.Entities.Setting", b =>
+                {
+                    b.Navigation("Socials");
                 });
 #pragma warning restore 612, 618
         }

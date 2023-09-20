@@ -70,7 +70,7 @@
         <div class="tab-menu">
             <div class="container">
                 <div class="title">
-                    <p>Latest Products</p>
+                    <p>Our Products</p>
                 </div>
 
                 <div class="category-name">
@@ -177,194 +177,7 @@
         </div>
     </section>
 
-    <section id="slider-recently">
-        <div class="slider-recently">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="latest-products">
-                            <div class="title">
-                                Latest Products
-                            </div>
-                            <div class="slider">
-                                <div class="owl-carousel owl-theme">
-
-                                    <div class="item" style="display: flex; flex-direction: column; gap:20px;">
-
-
-                                        <div>
-                                            @{ var drink = 0;
-                                                foreach (var item in Model.products)
-                                                {
-                                                    if (item.Category?.Name?.ToLower() == ViewBag.Category1)
-                                                    {
-                                                        drink++;
-                                                        <div>
-                                                            <img src="~/AdminPanel/img/product/@item.Image" style="width:100%;height:100%;"  alt="">
-                                                            <p style="text-align: center"><a asp-action="ProductDetailsPage" asp-controller="Product" asp-route-id="@item.Id">@item.Name: <strong>$@item.Price</strong> </a> </p>
-                                                        </div> }
-                                                    if (drink == 3) break;
-                                                } }
-                                        </div>
-
-
-                                    </div>
-                                    <div class="item" style="display: flex; flex-direction: column; gap:20px;">
-
-
-                                        <div>
-                                            @{ var eggs = 0;
-                                                foreach (var item in Model.products)
-                                                {
-                                                    if (item.Category?.Name?.ToLower() == ViewBag.Category2)
-                                                    {
-                                                        eggs++;
-                                                        <div>
-                                                            <img src="~/AdminPanel/img/product/@item.Image" style="width:100%;height:100%;"  alt="">
-                                                            <p style="text-align: center"><a asp-action="ProductDetailsPage" asp-controller="Product" asp-route-id="@item.Id">@item.Name: <strong>$@item.Price</strong> </a> </p>
-                                                        </div> }
-                                                    if (eggs == 3) break;
-                                                } }
-                                        </div>
-
-
-
-
-
-                                    </div>
-
-                                    <div class="item" style="display: flex; flex-direction: column; gap:20px;">
-
-
-                                        <div>
-                                            @{ var breads = 0;
-                                                foreach (var item in Model.products)
-                                                {
-                                                    if (item.Category?.Name?.ToLower() == ViewBag.Category3)
-                                                    {
-                                                        breads++;
-                                                        <div>
-                                                            <img src="~/AdminPanel/img/product/@item.Image" style="width:100%;height:100%;"  alt="">
-                                                            <p style="text-align: center"><a asp-action="ProductDetailsPage" asp-controller="Product" asp-route-id="@item.Id">@item.Name: <strong>$@item.Price</strong> </a> </p>
-                                                        </div> }
-                                                    if (breads == 3) break;
-                                                } }
-                                        </div>
-
-
-
-
-
-
-                                    </div>
-                                    <div class="item" style="display: flex; flex-direction: column; gap:20px;">
-
-                                    </div>
-                                    <div class="item" style="display: flex; flex-direction: column; gap:20px;">
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="review-products">
-                            <div class="title">
-                                Review Products
-                            </div>
-
-                            <div class="slider">
-                                <div class="owl-carousel owl-theme">
-
-                                    <div class="item" style="display: flex; flex-direction: column; gap:20px;">
-
-
-                                        <div>
-                                            @{ var count = 0;
-                                                foreach (var item in Model.products)
-                                                {
-                                                    if (item.Category?.Name?.ToLower() == ViewBag.Category4)
-                                                    {
-                                                        count++;
-                                                        <div>
-                                                            <img src="~/AdminPanel/img/product/@item.Image" style="width:100%;height:100%;"  alt="">
-                                                            <p style="text-align: center"><a asp-action="ProductDetailsPage" asp-controller="Product" asp-route-id="@item.Id">@item.Name: <strong>$@item.Price</strong> </a> </p>
-                                                        </div> }
-                                                    if (count == 3) break;
-                                                } }
-                                        </div>
-
-
-                                    </div>
-                                    <div class="item" style="display: flex; flex-direction: column; gap:20px;">
-
-
-                                        <div>
-                                            @{ var count1 = 0;
-                                                foreach (var item in Model.products)
-                                                {
-                                                    if (item.Category?.Name?.ToLower() == ViewBag.Category5)
-                                                    {
-                                                        count1++;
-                                                        <div>
-                                                            <img src="~/AdminPanel/img/product/@item.Image" style="width:100%;height:100%;"  alt="">
-                                                            <p style="text-align: center"><a asp-action="ProductDetailsPage" asp-controller="Product" asp-route-id="@item.Id">@item.Name: <strong>$@item.Price</strong> </a> </p>
-                                                        </div> }
-                                                    if (count1 == 3) break;
-                                                } }
-                                        </div>
-
-
-
-
-
-                                    </div>
-
-                                    <div class="item" style="display: flex; flex-direction: column; gap:20px;">
-
-
-                                        <div>
-                                            @{ var count2 = 0;
-                                                foreach (var item in Model.products)
-                                                {
-                                                    if (item.Category?.Name?.ToLower() == ViewBag.Category6)
-                                                    {
-                                                        count2++;
-                                                        <div>
-                                                            <img src="~/AdminPanel/img/product/@item.Image" style="width:100%;height:100%;"  alt="">
-                                                            <p style="text-align: center"><a asp-action="ProductDetailsPage" asp-controller="Product" asp-route-id="@item.Id">@item.Name: <strong>$@item.Price</strong> </a> </p>
-                                                        </div> 
-                                                    }
-                                                    if (count2 == 3) break;
-                                                } }
-                                        </div>
-
-
-
-
-
-
-                                    </div>
-                                    <div class="item" style="display: flex; flex-direction: column; gap:20px;">
-
-                                    </div>
-                                    <div class="item" style="display: flex; flex-direction: column; gap:20px;">
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
+   
 
     <section id="blog">
         <div class="blog">
@@ -391,7 +204,21 @@
 
                             <div class="blog-content">
                                 <p>
-                                    @blog.BlogDetails?.Description
+                                    @{
+                                        var description = @blog.BlogDetails?.Description;
+                                        if (description != null)
+                                        {
+                                            if (description.Length <= 200)
+                                            {
+                                                @description
+                                            }
+                                            else
+                                            {
+                                                @description.Substring(0, 200)
+
+                                            }
+                                        }
+                                    }
                                 </p>
                             </div>
 

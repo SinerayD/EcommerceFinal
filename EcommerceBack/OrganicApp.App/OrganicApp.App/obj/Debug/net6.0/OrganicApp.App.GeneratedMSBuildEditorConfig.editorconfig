@@ -112,8 +112,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xQcm9kdWN0XFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Areas/AdminPanel/Views/Setting/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xTZXR0aW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Areas/AdminPanel/Views/Setting/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xTZXR0aW5nXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Areas/AdminPanel/Views/Setting/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xTZXR0aW5nXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Areas/AdminPanel/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Areas/AdminPanel/Views/Social/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xTb2NpYWxcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Areas/AdminPanel/Views/Social/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xTb2NpYWxcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Areas/AdminPanel/Views/Social/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5QYW5lbFxWaWV3c1xTb2NpYWxcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Areas/AdminPanel/Views/User/AssignRole.cshtml]
@@ -182,6 +206,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Views/Home/HomePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/OneDrive/Рабочий стол/EcommerceFinal/EcommerceBack/OrganicApp.App/OrganicApp.App/Views/Product/ProductCategoryPage.cshtml]

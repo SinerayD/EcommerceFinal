@@ -27,7 +27,7 @@ namespace OrganicApp.Service.Extensions
             services.AddScoped<IMessageSend, MessageSend>();
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<IFavoriteSerivce, FavoriteService>();
-            services.AddScoped<IContactService, ContactService>();
+            services.AddScoped<IContactService, Services.ContactService>();
         }
     }
 }

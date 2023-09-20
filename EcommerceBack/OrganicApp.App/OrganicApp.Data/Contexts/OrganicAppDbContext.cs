@@ -27,6 +27,8 @@ namespace OrganicApp.Data.Contexts
         public DbSet<Contact>? Contacts { get; set; }
         public DbSet<Basket>? Baskets { get; set; }
         public DbSet<Favorite>? Favorites { get; set; }
+        public DbSet<Setting>? Settings { get; set; }
+        public DbSet<Social>? Socials { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
