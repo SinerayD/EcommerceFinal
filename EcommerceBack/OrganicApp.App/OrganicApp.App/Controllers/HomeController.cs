@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using OrganicApp.Core.Entities;
 using OrganicApp.Service.Services;
 using OrganicApp.Service.Services.Interface;
+using System.Text.RegularExpressions;
 
 namespace OrganicApp.UI.Controllers
 {
@@ -15,9 +17,10 @@ namespace OrganicApp.UI.Controllers
         private readonly IBasketService _basketService;
         private readonly IFavoriteSerivce _favoriteService;
         private readonly IContactService _contactservice;
+        private readonly ISubscribeService _subscribeservice;
         private readonly UserManager<AppUser> _usermanager;
 
-        public HomeController(ICategoryService categoryservice, IProductService productservice, IBlogService blogservice, IAdvertService advertservice, IBasketService basketservice, IFavoriteSerivce favortiteService, UserManager<AppUser> usermanager, IContactService contactservice)
+        public HomeController(ICategoryService categoryservice, IProductService productservice, IBlogService blogservice, IAdvertService advertservice, IBasketService basketservice, IFavoriteSerivce favortiteService, UserManager<AppUser> usermanager, IContactService contactservice, ISubscribeService subscribeservice)
         {
             _categoryservice = categoryservice;
             _productservice = productservice;
@@ -27,6 +30,7 @@ namespace OrganicApp.UI.Controllers
             _favoriteService = favortiteService;
             _usermanager = usermanager;
             _contactservice = contactservice;
+            _subscribeservice = subscribeservice;
         }
 
 
@@ -138,5 +142,8 @@ namespace OrganicApp.UI.Controllers
         }
 
         #endregion
+
+
+      
     }
 }

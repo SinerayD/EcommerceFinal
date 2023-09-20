@@ -55,16 +55,11 @@
         </div>
     }
 
-
-    <div class="recent-news">
-        Search  By
-    </div>
-
     <div class="product-name">
         <div class="up">
             @foreach (var product in Model.products.Take(3))
             {
-                if (product.Category?.Name?.ToLower() == ViewBag.Category1)
+                if (product.Category?.Name?.ToLower() == ViewBag.Category3)
                 {
                     <span><a asp-action="ProductDetailsPage" asp-controller="Product" asp-route-id="@product.Id">@product.Name</a> </span>
                 }
@@ -76,7 +71,7 @@
 
             @foreach (var product in Model.products.Take(3))
             {
-                if (product.Category?.Name?.ToLower() == ViewBag.Category2)
+                if (product.Category?.Name?.ToLower() == ViewBag.Category4)
                 {
                     <span><a asp-action="ProductDetailsPage" asp-controller="Product" asp-route-id="@product.Id">@product.Name</a> </span>}
             }

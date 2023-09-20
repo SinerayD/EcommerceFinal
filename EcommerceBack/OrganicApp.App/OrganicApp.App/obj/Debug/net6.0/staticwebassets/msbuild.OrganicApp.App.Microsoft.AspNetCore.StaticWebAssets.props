@@ -1328,6 +1328,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\category\8ac992e8-a798-4e23-baf7-a3c85dccf93b_cat-8.webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\category\9c89a77c-42a3-49c3-a573-f91a2a4987d4_cat-9.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>OrganicApp.App</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/OrganicApp.App</BasePath>
+      <RelativePath>AdminPanel/img/category/9c89a77c-42a3-49c3-a573-f91a2a4987d4_cat-9.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\category\9c89a77c-42a3-49c3-a573-f91a2a4987d4_cat-9.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\category\9df3f6c5-d67c-46f5-8727-d010fe2efa09_cat-6.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>OrganicApp.App</SourceId>
@@ -1760,6 +1776,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\3fba6e9f-7703-4bf2-bf03-fd50ce148728_breadcrumb.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\3fd7a0b1-b5a8-4124-83ef-1f1921a470d0_j-4.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>OrganicApp.App</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/OrganicApp.App</BasePath>
+      <RelativePath>AdminPanel/img/product/3fd7a0b1-b5a8-4124-83ef-1f1921a470d0_j-4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\3fd7a0b1-b5a8-4124-83ef-1f1921a470d0_j-4.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\45540676-1b5e-4f86-94e1-b850801b4ec9_hottoq.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>OrganicApp.App</SourceId>
@@ -1968,6 +2000,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\895c42f6-dc74-4f01-ade6-e801745bd5e8_veg-2.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\8c763483-f11b-4426-8688-23ba2fa22fe0_j-3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>OrganicApp.App</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/OrganicApp.App</BasePath>
+      <RelativePath>AdminPanel/img/product/8c763483-f11b-4426-8688-23ba2fa22fe0_j-3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\8c763483-f11b-4426-8688-23ba2fa22fe0_j-3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\98352bab-fdd4-4eed-99ab-884a7de31725_c-4.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>OrganicApp.App</SourceId>
@@ -2096,6 +2144,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\ab63968c-1fd7-4e9d-9459-d16893988f36_veg-8.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\addcfb3e-e87a-4a08-b8f6-49d7105b43c8_j-1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>OrganicApp.App</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/OrganicApp.App</BasePath>
+      <RelativePath>AdminPanel/img/product/addcfb3e-e87a-4a08-b8f6-49d7105b43c8_j-1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\addcfb3e-e87a-4a08-b8f6-49d7105b43c8_j-1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\b2cc124c-043d-40af-aa6c-cc1a219f75df_yataq2.jfif))">
       <SourceType>Package</SourceType>
       <SourceId>OrganicApp.App</SourceId>
@@ -2191,6 +2255,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\cca7e129-c6b3-4275-a6b4-8c5554811d49_uzum.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\cee553e0-4649-4022-84a5-8a6105a4d031_j-2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>OrganicApp.App</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/OrganicApp.App</BasePath>
+      <RelativePath>AdminPanel/img/product/cee553e0-4649-4022-84a5-8a6105a4d031_j-2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\cee553e0-4649-4022-84a5-8a6105a4d031_j-2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\AdminPanel\img\product\d43191b7-3ab7-4863-bbb2-e767509ed9b2_meat-1.jpg))">
       <SourceType>Package</SourceType>

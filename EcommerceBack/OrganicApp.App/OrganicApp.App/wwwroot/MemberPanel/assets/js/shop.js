@@ -2083,7 +2083,7 @@ $(document).ready(function () {
 
 
 
-//Add Favori
+//Add Favorite
 
 let hearticon = document.querySelectorAll("#addheart")
 

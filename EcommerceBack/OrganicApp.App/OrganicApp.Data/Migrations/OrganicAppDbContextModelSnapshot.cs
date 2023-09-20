@@ -666,17 +666,38 @@ namespace OrganicApp.Data.Migrations
                     b.Property<DateTime>("ModifatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("SettingId")
+                    b.Property<int>("Status")
                         .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Socials");
+                });
+
+            modelBuilder.Entity("OrganicApp.Core.Entities.Subscribe", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifatedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SettingId");
-
-                    b.ToTable("Socials");
+                    b.ToTable("subscribes");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -807,15 +828,6 @@ namespace OrganicApp.Data.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("OrganicApp.Core.Entities.Social", b =>
-                {
-                    b.HasOne("OrganicApp.Core.Entities.Setting", "Settings")
-                        .WithMany("Socials")
-                        .HasForeignKey("SettingId");
-
-                    b.Navigation("Settings");
-                });
-
             modelBuilder.Entity("OrganicApp.Core.Entities.AppUser", b =>
                 {
                     b.Navigation("Baskets");
@@ -843,11 +855,6 @@ namespace OrganicApp.Data.Migrations
                     b.Navigation("Comments");
 
                     b.Navigation("ProductDetails");
-                });
-
-            modelBuilder.Entity("OrganicApp.Core.Entities.Setting", b =>
-                {
-                    b.Navigation("Socials");
                 });
 #pragma warning restore 612, 618
         }

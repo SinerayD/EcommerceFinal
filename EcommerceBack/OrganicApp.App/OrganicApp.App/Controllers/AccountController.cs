@@ -54,9 +54,9 @@ namespace OrganicApp.UI.Controllers
             {
                 await _roleManager.CreateAsync(new AppRole
                 {
-                    Name = "SuperAdmin"
+                    Name = "Superadmin"
                 });
-                await _userManager.AddToRoleAsync(user, "SuperAdmin");
+                await _userManager.AddToRoleAsync(user, "Superadmin");
 
                 var appUser = await _userManager.FindByEmailAsync(dto.Email);
                 if (appUser == null) return View(dto);

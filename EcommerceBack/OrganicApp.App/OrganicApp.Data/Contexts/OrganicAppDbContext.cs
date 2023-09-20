@@ -29,6 +29,7 @@ namespace OrganicApp.Data.Contexts
         public DbSet<Favorite>? Favorites { get; set; }
         public DbSet<Setting>? Settings { get; set; }
         public DbSet<Social>? Socials { get; set; }
+        public DbSet<Subscribe>? subscribes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

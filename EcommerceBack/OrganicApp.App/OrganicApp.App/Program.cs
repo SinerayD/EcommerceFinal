@@ -25,6 +25,8 @@ builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
 builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<ISocialService, SocialService>();
+builder.Services.AddScoped<ISubscribeService, SubscribeService>();
+
 
 #region Identity
 
